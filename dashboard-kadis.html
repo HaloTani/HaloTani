@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Monitoring Kadis - HALOTANI</title>
+    <link rel="stylesheet" href="css/dashboard-style.css">
+    <!-- Chart.js untuk grafik -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Dashboard Monitoring Kegiatan PPL</h1>
+        
+        <!-- Ringkasan -->
+        <div class="summary-cards">
+            <div class="card">
+                <h3>Total PPL</h3>
+                <p id="total-ppl">25</p>
+            </div>
+            <div class="card">
+                <h3>Kegiatan Bulan Ini</h3>
+                <p id="total-kegiatan">142</p>
+            </div>
+            <div class="card">
+                <h3>Desa Tercakup</h3>
+                <p id="total-desa">15</p>
+            </div>
+        </div>
+
+        <!-- Grafik -->
+        <div class="chart-container">
+            <canvas id="kegiatanChart"></canvas>
+        </div>
+
+        <!-- Tabel Kegiatan -->
+        <div class="table-container">
+            <h2>Daftar Kegiatan Terbaru</h2>
+            <table id="tabel-kegiatan">
+                <thead>
+                    <tr>
+                        <th>Nama PPL</th>
+                        <th>Desa</th>
+                        <th>Tanggal</th>
+                        <th>Jenis Kegiatan</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data akan diisi oleh JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/dashboard-script.js"></script>
+</body>
+</html>
