@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Platform PPL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Platform Penyuluh Pertanian</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Halo, <span id="user-name">PPL</span>!</h2>
+            <p>Wilayah Kerja: <span id="user-area">Area 1</span></p>
+        </div>
+        
+        <div class="card">
+            <h3>Statistik Anda</h3>
+            <div class="list-item">
+                <p>Laporan Dikirim: <strong>12</strong></p>
+            </div>
+            <div class="list-item">
+                <p>Laporan Disetujui: <strong>10</strong></p>
+            </div>
+            <div class="list-item">
+                <p>Laporan Pending: <strong>2</strong></p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h3>Laporan Terbaru</h3>
+            <div class="list-item">
+                <p><strong>Pemeriksaan Tanaman Padi</strong></p>
+                <p>20 Oktober 2023</p>
+                <span class="status-badge status-approved">Disetujui</span>
+            </div>
+            <div class="list-item">
+                <p><strong>Penyuluhan Petani</strong></p>
+                <p>18 Oktober 2023</p>
+                <span class="status-badge status-pending">Menunggu Review</span>
+            </div>
+            <button class="btn" onclick="window.location.href='report.html'">Buat Laporan Baru</button>
+        </div>
+    </div>
+
+    <div class="nav">
+        <a href="dashboard.html" class="nav-item active">🏠 Beranda</a>
+        <a href="report.html" class="nav-item">📝 Lapor</a>
+        <a href="history.html" class="nav-item">📋 Riwayat</a>
+        <a href="index.html" class="nav-item">🚪 Keluar</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

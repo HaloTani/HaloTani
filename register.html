@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - Platform PPL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Platform Penyuluh Pertanian</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2 class="text-center">Daftar Akun Baru</h2>
+            <div class="form-group">
+                <label for="reg-name">Nama Lengkap</label>
+                <input type="text" id="reg-name" placeholder="Nama lengkap Anda">
+            </div>
+            <div class="form-group">
+                <label for="reg-email">Email</label>
+                <input type="email" id="reg-email" placeholder="email@contoh.com">
+            </div>
+            <div class="form-group">
+                <label for="reg-phone">Nomor WhatsApp</label>
+                <input type="tel" id="reg-phone" placeholder="62xxxxxxxxxx">
+            </div>
+            <div class="form-group">
+                <label for="reg-password">Kata Sandi</label>
+                <input type="password" id="reg-password" placeholder="Buat kata sandi">
+            </div>
+            <div class="form-group">
+                <label for="reg-area">Wilayah Kerja</label>
+                <select id="reg-area">
+                    <option value="">Pilih wilayah kerja</option>
+                    <option value="area1">Area 1</option>
+                    <option value="area2">Area 2</option>
+                    <option value="area3">Area 3</option>
+                </select>
+            </div>
+            <button class="btn" onclick="register()">Daftar</button>
+            <button class="btn btn-secondary" onclick="window.location.href='login.html'">Kembali ke Login</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

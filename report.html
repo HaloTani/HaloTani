@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Laporan - Platform PPL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Platform Penyuluh Pertanian</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Buat Laporan Baru</h2>
+            <div class="form-group">
+                <label for="report-title">Judul Laporan</label>
+                <input type="text" id="report-title" placeholder="Contoh: Pemeriksaan Tanaman Padi">
+            </div>
+            <div class="form-group">
+                <label for="report-date">Tanggal Kegiatan</label>
+                <input type="date" id="report-date">
+            </div>
+            <div class="form-group">
+                <label for="report-location">Lokasi</label>
+                <input type="text" id="report-location" placeholder="Lokasi kegiatan">
+            </div>
+            <div class="form-group">
+                <label for="report-desc">Deskripsi Kegiatan</label>
+                <textarea id="report-desc" rows="4" placeholder="Jelaskan kegiatan yang dilakukan"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="report-photo">Unggah Foto</label>
+                <input type="file" id="report-photo" accept="image/*">
+            </div>
+            <button class="btn" onclick="submitReport()">Kirim Laporan</button>
+            <button class="btn btn-secondary" onclick="window.location.href='dashboard.html'">Batal</button>
+        </div>
+    </div>
+
+    <div class="nav">
+        <a href="dashboard.html" class="nav-item">🏠 Beranda</a>
+        <a href="report.html" class="nav-item active">📝 Lapor</a>
+        <a href="history.html" class="nav-item">📋 Riwayat</a>
+        <a href="index.html" class="nav-item">🚪 Keluar</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
